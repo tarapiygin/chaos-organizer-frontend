@@ -20,7 +20,7 @@ export default class Controller {
     this.registerEvents();
   }
 
-  async loadMessages(qantity = 8) {
+  async loadMessages(qantity = 10) {
     let lastMessageId;
     if (this.messages.length > 0) lastMessageId = this.messages[this.messages.length - 1].id;
     const messages = await this.API.getMessages(qantity, lastMessageId);
@@ -208,7 +208,7 @@ export default class Controller {
   async onUpdateMessages(messageId) {
     const i = this.messages.findIndex(({ id }) => id === messageId);
     if (i === -1) {
-      const messages = await this.API.getMessages(8);
+      const messages = await this.API.getMessages(10);
       this.messages = messages;
       this.UIManager.redrawMessages(...messages);
     }
