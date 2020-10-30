@@ -6,8 +6,8 @@ if (navigator.serviceWorker) {
   window.addEventListener('load', async () => {
     try {
       await navigator.serviceWorker.register(
-        './service.worker.js',
-        { scope: './' },
+        'service.worker.js',
+        { scope: '/' },
       );
     } catch (e) {
       // eslint-disable-next-line no-console
