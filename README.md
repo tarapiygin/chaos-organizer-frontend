@@ -1,3 +1,8 @@
+
+- exapmle: <a href="https://tarapiygin.github.io/chaos-organizer-frontend/">Github Pages</a>
+- frontend: <a href="https://github.com/tarapiygin/chaos-organizer-frontend">Repo</a>
+- backend: <a href="https://github.com/tarapiygin/chaos-organizer-backend/">Repo</a>
+
 Готово:
 1 Сохранение в истории ссылок и текстовых сообщений
 2 Ссылки (то, что начинается с http:// или https://) должны быть кликабельны и отображаться как ссылки
