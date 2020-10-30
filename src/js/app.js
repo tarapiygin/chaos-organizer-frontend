@@ -7,7 +7,7 @@ if (navigator.serviceWorker) {
     try {
       await navigator.serviceWorker.register(
         'service.worker.js',
-        { scope: '/' },
+        { scope: './' },
       );
     } catch (e) {
       // eslint-disable-next-line no-console
