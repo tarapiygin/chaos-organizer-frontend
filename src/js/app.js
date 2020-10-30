@@ -7,7 +7,7 @@ if (navigator.serviceWorker) {
     try {
       await navigator.serviceWorker.register(
         'service.worker.js',
-        { scope: './' },
+        { scope: '/chaos-organizer-frontend/' },
       );
     } catch (e) {
       // eslint-disable-next-line no-console
