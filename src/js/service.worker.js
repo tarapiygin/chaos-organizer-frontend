@@ -1,10 +1,10 @@
-const version = 'v1';
+const version = 'v2';
 const cacheName = `app-${version}`;
 const files = [
-  '/',
-  '/favicon.ico',
-  '/main.css',
-  '/main.js',
+  '/chaos-organizer-frontend/',
+  '/chaos-organizer-frontend/favicon.ico',
+  '/chaos-organizer-frontend/main.css',
+  '/chaos-organizer-frontend/main.js',
 ];
 
 async function putFilesToCache(data) {
