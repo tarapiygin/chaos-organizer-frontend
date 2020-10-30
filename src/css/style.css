@@ -1,0 +1,148 @@
+body {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  padding-right: 10px;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* .time-line {
+  height: 100vh;
+  position: fixed;
+  width: 10px;
+  top: 0;
+  left: 10vw;
+  background-color: #52e0f1;
+  z-index: -999;
+} */
+
+.timestamp {
+  background-color: #f16352;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  border-radius: 11% 33% 11% 23px;
+  transform: (-50%, 50%);
+  transform: translate(0, -50%);
+}
+
+.time-events {
+  overflow-y: scroll;
+  height: 86vh;
+  box-sizing: border-box;
+  border-left: 10px solid #52e0f1;
+  padding: 10px;
+}
+
+.time-event {
+  position: relative;
+  max-width: 560px;
+  box-sizing: border-box;
+}
+
+.time-event:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.time-event:last-child {
+  margin-bottom: 30px;
+}
+
+.time-event_delete-button {
+  color: #f16352;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.time-event_content {
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px #8d8d8d;
+}
+
+.time-event_date {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.time-event_text {
+  word-wrap: break-word;
+}
+
+.time-event_audio, .time-event_video {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.time-event_location {
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid black;
+  min-width: 100px;
+  padding: 5px 10px;
+}
+
+.upload-file-image {
+  width: 40px;
+  height: 40px;
+}
+
+.yandex-map {
+  width: 100%;
+  min-height: 300px;
+}
+
+.error {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #c10d00c9;
+  color: #fff;
+}
+
+.error.connect {
+  background-color: #00c140c9;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlapped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0.01;
+  height: 1px;
+  width: 1px;
+  z-index: 0;
+}
+
+@media (min-width: 710px) {}

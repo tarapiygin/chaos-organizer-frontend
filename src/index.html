@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time-line App</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="time-line"></div> -->
+        <div class="time-events"></div>
+
+        <div class="event-form-container">
+            <div class="event-form_video-preview-container hidden">
+                <video class="video-preview"></video>
+            </div>
+            <form novalidate class="event-form" id='event-form' name="event">
+                <textarea class="event-form_text-input" id="event-form_text-input" name="text" required></textarea>
+                <div class="event-form_create-buttons">
+                    <button type="button" class="event-form_audio-btn event-btn"><img class="button-image"
+                            src="./img/microphone.svg"></button>
+                    <button type="button" class="event-form_video-btn event-btn"><img class="button-image"
+                            src="./img/video-camera.svg"></button>
+                    <button type="button" class="event-form_file-btn event-btn"><img class="button-image"
+                            src="./img/upload-file.svg"></button>
+                </div>
+                <div class="event-form_control-buttons hidden">
+                    <button type="reset" class="event-form_reset-btn event-btn"><img class="button-image"
+                        src="./img/cancel.svg"></button>
+                    <div class="event-form_control-info"></div>
+                    <button type="submit" class="event-form_submit-btn event-btn"><img class="button-image"
+                        src="./img/send-message.svg"></button>
+                </div>
+                <input class="overlapped event-form_file-input" type="file">
+            </form>
+        </div>
+
+        <div class="location-form-container hidden">
+            <div novalidate class="location-form" id='location-form'>
+                <span class="location-form_title">Что-то пошло не так</span>
+                <span class="location-form_description">К сожалению, нам не удалось определить Ваше местоположение,
+                    пожалуйста дайте разрешение на использование геолокации, либо выберите ваше местоположение на
+                    карте</span>
+                <div class="yandex-map" id="map"></div>
+                <div class="location-form_button-container">
+                    <button type="reset" class="location-form_reset-btn btn">Отмена</button>
+                    <button type="submit" class="location-form_submit-btn btn">Ок</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-container hidden">
+            <div class="popup">
+                <div class="popup_header"></div>
+                <div class="popup_description"></div>
+                <div class="popup_button btn">Ок</div>
+            </div>
+        </div>
+        <img src="./img/file.svg" class="upload-file-image hidden">
+    </div>
+    <div class="error hidden"></div>
+</body>
+
+</html>
