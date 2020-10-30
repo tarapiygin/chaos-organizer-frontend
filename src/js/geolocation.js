@@ -29,7 +29,7 @@ const loadYmap = async () => {
   await new Promise((resolve) => {
     const interval = setInterval(() => {
       const script = document.createElement('script');
-      script.src = 'https://api-maps.yandex.ru/2.1/?&lang=ru_RU&amp;apikey=8f7a96c1-9c80-43e4-9ae4-b236fc803e01';
+      script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=8f7a96c1-9c80-43e4-9ae4-b236fc803e01';
       document.body.append(script);
       setTimeout(() => {
         try {
