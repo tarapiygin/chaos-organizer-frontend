@@ -129,7 +129,6 @@ export default class UIManager {
   registerEventsForMessages() {
     const messages = this.container.querySelectorAll('.time-event');
     messages.forEach((m) => {
-
       const deleteBtn = m.querySelector('.time-event_delete-button');
       m.addEventListener('mouseover', () => {
         deleteBtn.classList.remove('hidden');
