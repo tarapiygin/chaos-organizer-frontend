@@ -1,6 +1,6 @@
 import Controller from './Controller';
 
-const baseURL = 'http://localhost:7070';
+const baseURL = 'https://chaos-organizer.herokuapp.com/';
 
 if (navigator.serviceWorker) {
   window.addEventListener('load', async () => {
